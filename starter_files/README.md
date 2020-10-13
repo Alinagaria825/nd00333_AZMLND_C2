@@ -56,11 +56,11 @@ In this project, you will continue to work with the Bank Marketing dataset. You 
     - Link to screencast
 
 ## Screen Recording
-I made a short screencast available in the link [here](https://youtu.be/yTN2xGAwhRw) showing the; 
-    - Deployed Model
-    - Deployed Pipeline
-    - Automated ML Model
-    - API request to the endpoint with json payload.
+I made a short screencast available in the link [here](https://youtu.be/yTN2xGAwhRw) showing the:
+- Deployed Model
+- Deployed Pipeline
+- Automated ML Model
+- API request to the endpoint with json payload.
 
 ## Standout Suggestions
 To improve for future us, we can get more data sameple point for the dataset to enhance the model.
