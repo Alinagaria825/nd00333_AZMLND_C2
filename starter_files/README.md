@@ -29,7 +29,8 @@ In this project, you will continue to work with the Bank Marketing dataset. You 
     - Then from the Git Bash terminal I ran the cmmand `bash swagger.sh` from the swagger directory to start the wagger documnetation API service.
     - I then ran the `serve.py` file to serve the swagger.json file holdint the HTTP API methods and response for the model.
     - Once the server is running I open he browser and run `http://localhost:9000`, then in the Swagger instance running, I explore our *swagger.json* file at, `http://localhost:8001/swagger.json`
-    ![swagger](screenshots/swagger.JPG)
+    ![swagger](screenshots/swagger1.JPG)
+    ![swagger2](screenshots/swagger2.JPG)
 
 6. Consume model endpoints; With the swagger instance running correclty, we can now conum the endpoint
     - I obtaned the scoring URI and key generated after the deplyment and updated the `endpoint.py` file.
@@ -56,7 +57,7 @@ In this project, you will continue to work with the Bank Marketing dataset. You 
     - Link to screencast
 
 ## Screen Recording
-I made a short screencast available in the link [here](https://youtu.be/yTN2xGAwhRw) showing the:
+I made a short screencast available in the link [here](https://youtu.be/ttRhzpaT4dc) showing the:
 - Deployed Model
 - Deployed Pipeline
 - Automated ML Model
