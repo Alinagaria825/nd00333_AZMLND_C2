@@ -9,8 +9,9 @@ In this project, you will continue to work with the Bank Marketing dataset. You 
 
 1. Authentication: I used the lab provided by udacity to complete this section, thus no screenshots are provided here for authentication as it is already implemented in the virtual lab.
 
-2. Automated ML Experiment: Here I used created a new Automated ML run, used the [Bank-Markerting dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv).
+2. Automated ML Experiment: Here I used the [Bank-Markerting dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv).
 
+    - Here is an imge fo the Registred Dataset in Azure ML Studio. ![dataset](screenshots/dataset.JPG)
     - Created a new experiment with name *bank-marketing-exprt* ![model](screenshots/complete_run.JPG)
     - Created new cluster *auto-ml* with Standard_DS12_v2 for the Virtual Machine Size and selected 1 as the number of minimum nodes.
     - Run the experiment using *Classification*, set *Exit criterion* to 1 hour and reduced *Concurrency* to 1.
@@ -41,7 +42,11 @@ In this project, you will continue to work with the Bank Marketing dataset. You 
 
 7. Create and publish a pipeline: I crted an published a pipline  runninng the notebook file provided in the project files.
     - First I uploaded the Jupyter notebook, `aml-pipelines-with-automated-machine-learning-step.ipynb`, to Azure ML Studio.
-    - I created an expriment 
+    - I created an expriment, *bank-marketing-exprt* and published pipline. ![pipeline](screenshots/pipeline_complete.JPG)
+    - The Bank-Markting dataset and the AutoML module are highligted in the imaeg above. 
+    - Here is n image for the *Published Pipeline overview* showing the REST endpoing and a status of ACTIVE. ![active](screenshots/pipeline_endpint.JPG)
+    - The Jupyter Notebook includes the “Use RunDetails Widget”. ![rundetails](screenshots/run_details.JPG)
+    - Pipeline published from the notebook. ![pipe](screenshots/pipe.JPG)
 
 8. Documentation: This README.md document contains:
     - Project Overview
