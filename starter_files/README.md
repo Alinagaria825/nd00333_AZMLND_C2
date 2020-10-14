@@ -1,6 +1,9 @@
 # Operationalizing Machine Learning
 
-In this project, you will continue to work with the Bank Marketing dataset. You will use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. You will also create, publish, and consume a pipeline. In the end, you will demonstrate all of your work by creating a README file and a screencast video.
+## Project Overview
+In this project we demostrate how to Opertionalize Machine Learing in Azure ML Studio. Here we used a [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) and  Azure to configure a cloud-based machine learning production model, deploy it, and consume it. We also create, publish, and consume a pipeline.
+
+Throught out this project we use both Azure ML Studio and th Python SDK. We start with authentication and then run an Automated ML experiment to deploy the best model. Once the best model is selected we run the logs.py fle to enable Application Insigts which allows rview informaton hen consumng the service. Finally we create, publish and interact with a pipeline developed in a Jupyter Notebook. 
 
 ## Architectural Diagram
 ![azureml](screenshots/azureml_architecture.png)
