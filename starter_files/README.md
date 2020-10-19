@@ -1,9 +1,7 @@
 # Operationalizing Machine Learning
 
 ## Project Overview
-In this project we demostrate how to Opertionalize Machine Learing in Azure ML Studio. Here we used a [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) and  Azure to configure a cloud-based machine learning production model, deploy it, and consume it. We also create, publish, and consume a pipeline.
-
-Throught out this project we use both Azure ML Studio and th Python SDK. We start with authentication and then run an Automated ML experiment to deploy the best model. Once the best model is selected we run the logs.py fle to enable Application Insigts which allows rview informaton hen consumng the service. Finally we create, publish and interact with a pipeline developed in a Jupyter Notebook. 
+In this project, we demonstrate how to Operationalize Machine Learning in Azure ML Studio. Here I used the [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) to create an Automate ML run experiment, then deployed the best model generated from the run. I obtained the REST endpoint for the best model and the Swagger documentation for the model and then I was able to consume the model endpoint. Finally, I created, deployed, and publish a pipeline with the help of the Python SDK.
 
 ## Architectural Diagram
 ![azureml](screenshots/azureml_architecture.png)
@@ -14,7 +12,8 @@ Throught out this project we use both Azure ML Studio and th Python SDK. We star
 
 2. Automated ML Experiment: Here I used the [Bank-Markerting dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv).
 
-    - Here is an imge fo the Registred Dataset in Azure ML Studio. ![dataset](screenshots/dataset.JPG)
+    - I uploaded the dataset and registered it in Azure ML Studio and I used column "y" as the target column.
+    - Here is an image fo the Registred Dataset in Azure ML Studio. ![dataset](screenshots/dataset.JPG)
     - Created a new experiment with name *bank-marketing-exprt* ![model](screenshots/complete_run.JPG)
     - Created new cluster *auto-ml* with Standard_DS12_v2 for the Virtual Machine Size and selected 1 as the number of minimum nodes.
     - Run the experiment using *Classification*, set *Exit criterion* to 1 hour and reduced *Concurrency* to 1.
@@ -34,6 +33,12 @@ Throught out this project we use both Azure ML Studio and th Python SDK. We star
     - Once the server is running I open he browser and run `http://localhost:9000`, then in the Swagger instance running, I explore our *swagger.json* file at, `http://localhost:8001/swagger.json`
     ![swagger](screenshots/swagger1.JPG)
     ![swagger2](screenshots/swagger2.JPG)
+
+    - The model payload response is as below
+    ![model_payload](screenshots/model_payload.JPG)
+    ![model_payload1](screenshots/model_payload1.JPG)
+    ![model_payload2](screenshots/model_payload2.JPG)
+
 
 6. Consume model endpoints; With the swagger instance running correclty, we can now conum the endpoint
     - I obtaned the scoring URI and key generated after the deplyment and updated the `endpoint.py` file.
@@ -60,7 +65,7 @@ Throught out this project we use both Azure ML Studio and th Python SDK. We star
     - Link to screencast
 
 ## Screen Recording
-I made a short screencast available in the link [here](https://youtu.be/ttRhzpaT4dc) showing the:
+I made a short screencast available in the link [here](https://youtu.be/UfYqLiJg8yc) showing the:
 - Deployed Model
 - Deployed Pipeline
 - Automated ML Model
